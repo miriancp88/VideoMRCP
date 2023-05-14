@@ -1,0 +1,7 @@
+@startuml
+actor Agente
+
+Agente -- ()"Evaluar Solicitud de Credito"
+()"Evaluar Solicitud de Credito"  <|.. "<<Extend>>" ()"Solicitar información adicional al cliente"
+
+@enduml

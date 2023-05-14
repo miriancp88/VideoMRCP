@@ -1,0 +1,23 @@
+@startuml
+actor Empleado
+
+
+Empleado --(Introducción de pedido)
+
+Empleado-- (Cancelar pedido)
+Empleado --(Obtener estado Pedido)
+Empleado -- (Borrar Pedido)
+Empleado -- (Buscar pedidos)
+Empleado -- (Alta Cliente)
+Empleado -- (Buscar Cliente)
+
+(Alta Cliente) ..|> "extiende" (Introducción de pedido)
+(Introducción de pedido) ..|> "incluye" (Buscar Cliente)
+(Pago en cuenta) ..|> "extiende" (Introducción de pedido)
+(Pago con tarjeta) ..|> "extiende" (Introducción de pedido)
+(Obtener estado Pedido) ..|> "incluye" (Borrar Pedido)
+(Cancelar pedido) ..|> "incluye" (Buscar pedidos)
+
+
+
+@enduml

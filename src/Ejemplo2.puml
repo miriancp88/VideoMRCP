@@ -1,0 +1,8 @@
+@startuml
+actor Bibliotecario
+
+Bibliotecario -- ()"Baja Socio"
+()"Baja Socio" ..|> "<<include>>"()"Buscar Socio"
+
+
+@enduml

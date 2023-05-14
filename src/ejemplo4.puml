@@ -1,0 +1,9 @@
+@startuml
+actor Agente
+
+Agente --> ()"Enviar solicitud de credito"
+
+()"Enviar solicitud de credito personal" --> ()"Enviar solicitud de credito"
+()"Enviar solicitud de credito empresarila" --> ()"Enviar solicitud de credito"
+
+@enduml
